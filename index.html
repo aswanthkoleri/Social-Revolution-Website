@@ -1,135 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width = device-width,initial-scale=1">
-<title> Shubham Verma </title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade|Lobster" rel="stylesheet">
-<style>
-	#con{
-		color: black;
-		background-color: black;
-		height:0%;
-		width: auto;
-	}
-	.f{
-		background-image: url("css/images/bg.jpg");
-		background-size: auto auto;
-		background-repeat: no-repeat;
-		font-family: Lobster;
-	}
-	#phi{
-		
-		color: black;
-	}
-	.carousel-inner
-	{
-		width:100%;
-		max-height: 400px !important;
-	}
-	.jumbotron2{
-		background-color: #c8f442;
-		height: 35px;
-	}
-	.header img{
-		float: left;
-		width: 100px;
-		height:100px;
-		background :#555;
-		border-radius: 100%;
-	}
-	.header h1{
-		position: relative;
-		top: 18px;
-		left: 10px;
-	}
-	.spacing{
-		position: relative;
-		top-margin:100px;
-		float: bottom;
-	}
-	#panel
-	{
-		display: none;
-		padding: 50px;
-	}
+  <meta charset="UTF-8">
+  <title>Social Revolution - User Login</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+  <link rel="stylesheet" href="css/style.css">
 
-	#abtfonts{
-		font-size: 20px;
-	}
-	span{
-		font-family: Lobster;
-	}
-	.img-center {margin:0 auto;}
-
-</style>
-
-
-
-
+  
 </head>
 
-<body class="f">
-	
-<div class="container">
-	<div class="header"  class="jumbotron" id="phi">
-		<img src="css/images/help.png" style="margin-top: 2em;">
-		<ul class="list-inline" class="spacing">
-			<li><h1>Social Responsibility . com</h1></li>
-		<li style="margin-left: 60em;"><a href="Signin.html"><button class="btn btn-submit"><div id="flip"><span class="glyphicon glyphicon-user"><span class="f">Sign In  <span style="font-family: arial;">   OR   </span> <span class="glyphicon glyphicon-plus"><span class="f">  Sign Up</span></span></span></span></button></a></li>
+<body>
+  <div class="login-wrap">
 
-		<!--<li style="margin-left: 0em;"><a href="#"><button class="btn btn-primary"><span class="glyphicon glyphicon-plus"><span style="font-family: Lobster;">Sign Up</span></span></button></a></li>-->
-		</ul>
+	<div class="login-html">
 
+	<center><h1>Social Revolution</h1></center>
+
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+    	<form class="login-form" method="POST" action="login.php">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input" name="user">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="pass">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</form>
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+		</div>
 	</div>
-
 </div>
-	<p>          </p>
-	<p>          </p>
-	<p>          </p>
-<div class="container" class="spacing">
-	<div class="jumbotron2">
-	<ul class="list-inline" class="spacing">
-	<li style="margin-left: 0em;"><a href="#"><button class="btn btn-default"><div id="flip"><span class="glyphicon glyphicon-home"><span class="f"> Home<span></span></div> <div id="panel">Hello world!</div></button></a></li>
-	<li style="margin-left: 0em;"><a href="#l"><button class="btn btn-default"><span class="glyphicon glyphicon-info-sign"><span class="f"> About</span></span></button></a></li>
-	<li class="dropdown" style="margin-left: 0em;"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><button class="btn btn-default">Contact us</button><span class="caret"></span>
-	<ul class="dropdown-menu">
-	<li><a href="#">Phone</a></li>
-	<li><a href="#">Email</a></li>
-	<li><a href="#">Mobile</a></li>
-	</ul>
-	<li style="margin-left: 0em;"><a href="#"><button class="btn btn-default"><div id="flip">Events</div> <div id="panel">Hello world!</div></button></a></li>
-	
-
-
-	</a>
-	</a></li>
-	</ul>
-	</div>
-</div>
-
-	<div class="container" >
-	<div style="margin-top: 70em"  id="abt">
-		<h1 style="font-size: 60px;">About Us</h1>
-		<p id="l" style="font-size: 20px;">This is is a Social media website which brings all the people together who are interested in social works like environmental protection,pollution,etc.As we all know, there are some people out there who are willing to help us in these activities but these people doesnt get ample support.Well ! This website is a solution for this. Our Website 'Social revolution' is a place where people who are willing to involve in the Social activities are able to seek help from other people or maybe any organisation through posts.The posts of the user comes like a news feed and those people or volunteers who can help these users can contact them or just comment beneath the post if they can be helpful to them.</p>
-	</div>
-	<div>
-		<img src="css/images/vol.png" class="img-responsive img-center">
-	</div>
-	</div>
-
-	<div class="container">
-	<div>
-		
-	</div>
-		
-	</div>
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+  
+  
 </body>
-
 </html>

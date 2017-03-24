@@ -22,6 +22,7 @@
     }
 
     $sql= "SELECT password FROM $tbname WHERE username = '$user'";
+    $_SESSION['login_user'] = $user;
     $stmt = $conn->query($sql); 
     $row =$stmt->fetch_assoc();   
     $act_pass = $row['password']; 
