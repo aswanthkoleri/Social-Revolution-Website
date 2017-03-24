@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -6,9 +8,16 @@
   
   
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+  <link rel="stylesheet" href="css/style.css">
+<?php
 
-      <link rel="stylesheet" href="css/style.css">
+	session_start();
+	
+	if(isset($_SESSION['login_user'])){  
+	    header("location: welcome.php");
+	}
 
+?>
   
 </head>
 

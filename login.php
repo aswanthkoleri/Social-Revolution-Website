@@ -22,7 +22,6 @@
     }
 
     $sql= "SELECT password FROM $tbname WHERE username = '$user'";
-    $_SESSION['login_user'] = $user;
     $stmt = $conn->query($sql); 
     $row =$stmt->fetch_assoc();   
     $act_pass = $row['password']; 
@@ -30,6 +29,8 @@
 
     if($pass == $act_pass){
       echo "Correct!";
+      $_SESSION['login_user'] = $user;
+      $_SESSION['type'] = active;
       header("location: welcome.php");
     }
     else{

@@ -1,3 +1,16 @@
+<?php
+	session_start();
+
+	if(!isset($_SESSION['login_user'])){  
+	  echo '<script language="javascript">';
+      echo 'alert("What? Dude login first :P")';
+      echo '</script>';   
+      header("Refresh: 1; url=index.php"); 
+      exit();
+	}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +19,10 @@
 <body>
 
 
-Welcome <?php session_start();echo $_SESSION['login_user']; ?>
+Welcome 
+<?php
+
+echo $_SESSION['login_user']; ?>
 <br>
 <a href="logout.php">logout</a>
 <br>
