@@ -5,7 +5,7 @@
 	  echo '<script language="javascript">';
       echo 'alert("What? Dude login first :P")';
       echo '</script>';   
-      header("Refresh: 1; url=index.php"); 
+      header("Refresh: 1; url=signin.php"); 
       exit();
 	}
 
